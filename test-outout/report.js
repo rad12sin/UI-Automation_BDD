@@ -101,7 +101,7 @@ formatter.examples({
     {
       "cells": [
         "Verify for various installment",
-        "value"
+        "values"
       ],
       "line": 24,
       "id": "verify-the-pagantis-simulator-for-calculating-installment-amount;test-scenario-for-pagantis;;2"
@@ -191,98 +191,98 @@ formatter.match({
   "location": "PagantisSimulatorDefinition.user_launched_the_pagantis()"
 });
 formatter.result({
-  "duration": 8959339800,
+  "duration": 9500442900,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_title_of_page()"
 });
 formatter.result({
-  "duration": 7023700,
+  "duration": 21424100,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.user_enters_12_months_for_installment()"
 });
 formatter.result({
-  "duration": 274732500,
+  "duration": 418514300,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_installment_amount()"
 });
 formatter.result({
-  "duration": 274978200,
+  "duration": 286910000,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_10_month()"
 });
 formatter.result({
-  "duration": 207106900,
+  "duration": 240094500,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_9_month()"
 });
 formatter.result({
-  "duration": 258339400,
+  "duration": 235102000,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_8_month()"
 });
 formatter.result({
-  "duration": 211541100,
+  "duration": 242286600,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_7_month()"
 });
 formatter.result({
-  "duration": 214732400,
+  "duration": 186303500,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_6_month()"
 });
 formatter.result({
-  "duration": 191214900,
+  "duration": 214298400,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_5_month()"
 });
 formatter.result({
-  "duration": 246098900,
+  "duration": 136278100,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_4_month()"
 });
 formatter.result({
-  "duration": 108997700,
+  "duration": 98198800,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_3_month()"
 });
 formatter.result({
-  "duration": 206285500,
+  "duration": 143897600,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_2_month()"
 });
 formatter.result({
-  "duration": 217235300,
+  "duration": 138100500,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 753450000,
+  "duration": 800427800,
   "status": "passed"
 });
 });

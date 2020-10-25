@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 25,
+        "line": 24,
         "name": "Test scenario for Pagantis",
         "description": "",
         "id": "verify-the-pagantis-simulator-for-calculating-installment-amount;test-scenario-for-pagantis;;2",
@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10924991500,
+              "duration": 9500442900,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 10758200,
+              "duration": 21424100,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 251095700,
+              "duration": 418514300,
               "status": "passed"
             },
             "line": 7,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 123593100,
+              "duration": 286910000,
               "status": "passed"
             },
             "line": 8,
@@ -60,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 85344700,
+              "duration": 240094500,
               "status": "passed"
             },
             "line": 9,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 145674700,
+              "duration": 235102000,
               "status": "passed"
             },
             "line": 10,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 116444600,
+              "duration": 242286600,
               "status": "passed"
             },
             "line": 11,
@@ -96,7 +96,7 @@
           },
           {
             "result": {
-              "duration": 83859900,
+              "duration": 186303500,
               "status": "passed"
             },
             "line": 12,
@@ -108,7 +108,7 @@
           },
           {
             "result": {
-              "duration": 83167300,
+              "duration": 214298400,
               "status": "passed"
             },
             "line": 13,
@@ -120,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 112483800,
+              "duration": 136278100,
               "status": "passed"
             },
             "line": 14,
@@ -132,7 +132,7 @@
           },
           {
             "result": {
-              "duration": 86762300,
+              "duration": 98198800,
               "status": "passed"
             },
             "line": 15,
@@ -144,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 85935600,
+              "duration": 143897600,
               "status": "passed"
             },
             "line": 16,
@@ -156,7 +156,7 @@
           },
           {
             "result": {
-              "duration": 87526600,
+              "duration": 138100500,
               "status": "passed"
             },
             "line": 17,
@@ -168,10 +168,10 @@
           },
           {
             "result": {
-              "duration": 21500,
+              "duration": 800427800,
               "status": "passed"
             },
-            "line": 20,
+            "line": 19,
             "name": "Close the browser",
             "match": {
               "location": "PagantisSimulatorDefinition.close_the_browser()"

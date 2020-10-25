@@ -27,7 +27,7 @@ public class PagantisSimulatorDefinition{
 	 @Given("^user launched the pagantis$")
 	 public void user_launched_the_pagantis(){
 
-		 System.setProperty("webdriver.chrome.driver", "F:\\ui-automation\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
 		 driver=new ChromeDriver();
 		 driver.get("file:///E:/workspace/o4s/api_automation/pg-qa-assignment/test1/index.html");
 		 driver.manage().window().maximize();
@@ -151,10 +151,7 @@ public class PagantisSimulatorDefinition{
 
 	 @Then("^Close the browser$")
 	 public void close_the_browser(){
-		 //driver.quit();
+		 driver.quit();
 	 }
-
-
-
 
 }
