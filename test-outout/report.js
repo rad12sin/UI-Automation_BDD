@@ -26,21 +26,66 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "user enters 2 months for installment",
+  "name": "installment of 12 months verify the installment amount",
   "keyword": "When "
 });
 formatter.step({
   "line": 8,
-  "name": "verify the installment amount",
+  "name": "verify the installment amount of 11 months",
   "keyword": "Then "
 });
 formatter.step({
   "line": 9,
+  "name": "verify the installment amount of 10 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "verify the installment amount of 9 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "verify the installment amount of 8 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "verify the installment amount of 7 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "verify the installment amount of 6 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "verify the installment amount of 5 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 15,
+  "name": "verify the installment amount of 4 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 16,
+  "name": "verify the installment amount of 3 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 17,
+  "name": "verify the installment amount of 2 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
   "name": "Close the browser",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 12,
+  "line": 23,
   "name": "",
   "description": "",
   "id": "verify-the-pagantis-simulator-for-calculating-installment-amount;test-scenario-for-pagantis;",
@@ -50,7 +95,7 @@ formatter.examples({
         "username",
         "password"
       ],
-      "line": 13,
+      "line": 24,
       "id": "verify-the-pagantis-simulator-for-calculating-installment-amount;test-scenario-for-pagantis;;1"
     },
     {
@@ -58,14 +103,14 @@ formatter.examples({
         "naveenk",
         "test@123"
       ],
-      "line": 14,
+      "line": 25,
       "id": "verify-the-pagantis-simulator-for-calculating-installment-amount;test-scenario-for-pagantis;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 14,
+  "line": 25,
   "name": "Test scenario for Pagantis",
   "description": "",
   "id": "verify-the-pagantis-simulator-for-calculating-installment-amount;test-scenario-for-pagantis;;2",
@@ -84,16 +129,61 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "user enters 2 months for installment",
+  "name": "installment of 12 months verify the installment amount",
   "keyword": "When "
 });
 formatter.step({
   "line": 8,
-  "name": "verify the installment amount",
+  "name": "verify the installment amount of 11 months",
   "keyword": "Then "
 });
 formatter.step({
   "line": 9,
+  "name": "verify the installment amount of 10 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "verify the installment amount of 9 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "verify the installment amount of 8 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "verify the installment amount of 7 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "verify the installment amount of 6 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "verify the installment amount of 5 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 15,
+  "name": "verify the installment amount of 4 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 16,
+  "name": "verify the installment amount of 3 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 17,
+  "name": "verify the installment amount of 2 months",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
   "name": "Close the browser",
   "keyword": "Then "
 });
@@ -101,35 +191,98 @@ formatter.match({
   "location": "PagantisSimulatorDefinition.user_launched_the_pagantis()"
 });
 formatter.result({
-  "duration": 10695118300,
+  "duration": 10924991500,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_title_of_page()"
 });
 formatter.result({
-  "duration": 6701000,
+  "duration": 10758200,
   "status": "passed"
 });
 formatter.match({
-  "location": "PagantisSimulatorDefinition.user_enters_2_months_for_installment()"
+  "location": "PagantisSimulatorDefinition.user_enters_12_months_for_installment()"
 });
 formatter.result({
-  "duration": 18400,
+  "duration": 251095700,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.verify_the_installment_amount()"
 });
 formatter.result({
-  "duration": 36800,
+  "duration": 123593100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_10_month()"
+});
+formatter.result({
+  "duration": 85344700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_9_month()"
+});
+formatter.result({
+  "duration": 145674700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_8_month()"
+});
+formatter.result({
+  "duration": 116444600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_7_month()"
+});
+formatter.result({
+  "duration": 83859900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_6_month()"
+});
+formatter.result({
+  "duration": 83167300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_5_month()"
+});
+formatter.result({
+  "duration": 112483800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_4_month()"
+});
+formatter.result({
+  "duration": 86762300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_3_month()"
+});
+formatter.result({
+  "duration": 85935600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_2_month()"
+});
+formatter.result({
+  "duration": 87526600,
   "status": "passed"
 });
 formatter.match({
   "location": "PagantisSimulatorDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 1388166000,
+  "duration": 21500,
   "status": "passed"
 });
 });

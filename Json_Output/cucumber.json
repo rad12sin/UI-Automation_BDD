@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 14,
+        "line": 25,
         "name": "Test scenario for Pagantis",
         "description": "",
         "id": "verify-the-pagantis-simulator-for-calculating-installment-amount;test-scenario-for-pagantis;;2",
@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10695118300,
+              "duration": 10924991500,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 6701000,
+              "duration": 10758200,
               "status": "passed"
             },
             "line": 6,
@@ -36,23 +36,23 @@
           },
           {
             "result": {
-              "duration": 18400,
+              "duration": 251095700,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enters 2 months for installment",
+            "name": "installment of 12 months verify the installment amount",
             "match": {
-              "location": "PagantisSimulatorDefinition.user_enters_2_months_for_installment()"
+              "location": "PagantisSimulatorDefinition.user_enters_12_months_for_installment()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 36800,
+              "duration": 123593100,
               "status": "passed"
             },
             "line": 8,
-            "name": "verify the installment amount",
+            "name": "verify the installment amount of 11 months",
             "match": {
               "location": "PagantisSimulatorDefinition.verify_the_installment_amount()"
             },
@@ -60,10 +60,118 @@
           },
           {
             "result": {
-              "duration": 1388166000,
+              "duration": 85344700,
               "status": "passed"
             },
             "line": 9,
+            "name": "verify the installment amount of 10 months",
+            "match": {
+              "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_10_month()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 145674700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify the installment amount of 9 months",
+            "match": {
+              "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_9_month()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 116444600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify the installment amount of 8 months",
+            "match": {
+              "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_8_month()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 83859900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify the installment amount of 7 months",
+            "match": {
+              "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_7_month()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 83167300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify the installment amount of 6 months",
+            "match": {
+              "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_6_month()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 112483800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify the installment amount of 5 months",
+            "match": {
+              "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_5_month()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 86762300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "verify the installment amount of 4 months",
+            "match": {
+              "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_4_month()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 85935600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "verify the installment amount of 3 months",
+            "match": {
+              "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_3_month()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 87526600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify the installment amount of 2 months",
+            "match": {
+              "location": "PagantisSimulatorDefinition.verify_the_installment_amount_for_2_month()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21500,
+              "status": "passed"
+            },
+            "line": 20,
             "name": "Close the browser",
             "match": {
               "location": "PagantisSimulatorDefinition.close_the_browser()"
