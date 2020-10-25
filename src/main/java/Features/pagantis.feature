@@ -16,12 +16,11 @@ Then verify the installment amount of 4 months
 Then verify the installment amount of 3 months
 Then verify the installment amount of 2 months
 
-
 Then Close the browser
 
 
 Examples:
-	| username | password |
-	| naveenk  | test@123 |
+	| Emi_installment | Amount |
+	| Verify for various installment  | values |
 
 		

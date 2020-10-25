@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.19766">
-<testcase classname="Verify the Pagantis Simulator for calculating Installment amount" name="Test scenario for Pagantis" time="12.19766">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.131076">
+<testcase classname="Verify the Pagantis Simulator for calculating Installment amount" name="Test scenario for Pagantis" time="12.131076">
 <system-out><![CDATA[Given user launched the pagantis............................................passed
 Then verify the title of page...............................................passed
 When installment of 12 months verify the installment amount.................passed
