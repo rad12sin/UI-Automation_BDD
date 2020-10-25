@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Test scenario for Pagantis",
+        "description": "",
+        "id": "verify-the-pagantis-simulator-for-calculating-installment-amount;test-scenario-for-pagantis;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10695118300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launched the pagantis",
+            "match": {
+              "location": "PagantisSimulatorDefinition.user_launched_the_pagantis()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6701000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify the title of page",
+            "match": {
+              "location": "PagantisSimulatorDefinition.verify_the_title_of_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters 2 months for installment",
+            "match": {
+              "location": "PagantisSimulatorDefinition.user_enters_2_months_for_installment()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify the installment amount",
+            "match": {
+              "location": "PagantisSimulatorDefinition.verify_the_installment_amount()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1388166000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Close the browser",
+            "match": {
+              "location": "PagantisSimulatorDefinition.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify the Pagantis Simulator for calculating Installment amount",
+    "description": "",
+    "id": "verify-the-pagantis-simulator-for-calculating-installment-amount",
+    "keyword": "Feature",
+    "uri": "F:/ui-automation/src/main/java/Features/pagantis.feature"
+  }
+]
