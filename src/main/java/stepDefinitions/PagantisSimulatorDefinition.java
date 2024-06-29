@@ -1,157 +1,129 @@
 package stepDefinitions;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Point;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import junit.framework.Assert;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class PagantisSimulatorDefinition{
+public class PagantisSimulatorDefinition {
 
-	 WebDriver driver;
+  WebDriver driver;
 
 
-	 @Given("^user launched the pagantis$")
-	 public void user_launched_the_pagantis(){
+  @Given("^user launched the Swag labs$")
+  public void user_launched_the_pagantis() {
 
-		 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
-		 driver=new ChromeDriver();
-		 driver.get("file:///E:/workspace/o4s/api_automation/pg-qa-assignment/test1/index.html");
-		 driver.manage().window().maximize();
-	 }
+    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver");
+    driver = new ChromeDriver();
+    driver.get("https://www.saucedemo.com/");
+    driver.manage().window().maximize();
+    driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+  }
 
-	 @Then("^verify the title of page$")
-	 public void verify_the_title_of_page(){
-	 String title = driver.getTitle();
-	 System.out.println(title);
-	 Assert.assertEquals("Simulator", title);
-	 }
+  @Then("^verify the title of page$")
+  public void verify_the_title_of_page() {
+    String title = driver.getTitle();
+    System.out.println(title);
+    Assert.assertEquals("Swag Labs", title);
+  }
 
-	 @When("^installment of 12 months verify the installment amount$")
-	 public  void user_enters_12_months_for_installment(){
-		 driver.switchTo().frame(
-				 driver.findElements(By.tagName("iframe")).get(0));
-		 new WebDriverWait(driver, 20).until(
-				 ExpectedConditions.elementToBeClickable(By
-						 .xpath("//*[@id=\"SimControl-formSelector\"]/button[1]")));
-		 WebElement emiEle = driver.findElement(By.xpath("//*[@id=\"value-quotes\"]"));
-		 String emiValue = emiEle.getText();
-		 System.out.println("emi amount for 12 months tenure is "+emiValue);
-		 Assert.assertEquals(emiValue,"55.43");
-
-	//	 new WebDriverWait(driver, 20).until(
-	//			 ExpectedConditions.elementToBeClickable(By
-	//					 .xpath("//*[@id=\"SimControl-formSelector\"]/button[1]"))).click();
-
-	 }
-
-	 @Then("^verify the installment amount of 11 months$")
-	 public void verify_the_installment_amount(){
-		 WebElement minusEle = driver.findElement(By.xpath("//*[@id=\"SimControl-formSelector\"]/button[1]"));
-		 minusEle.click();
-		 WebElement emiEle11 = driver.findElement(By.xpath("//*[@id=\"value-quotes\"]"));
-		 String emiValue11 = emiEle11.getText();
-		 System.out.println("emi amount for 12 months tenure is "+ emiValue11);
-		 Assert.assertEquals(emiValue11,"59.93");
-	 }
-	@Then("^verify the installment amount of 10 months$")
-	public void verify_the_installment_amount_for_10_month(){
-		WebElement minusEle = driver.findElement(By.xpath("//*[@id=\"SimControl-formSelector\"]/button[1]"));
-		minusEle.click();
-		WebElement emiEle11 = driver.findElement(By.xpath("//*[@id=\"value-quotes\"]"));
-		String emiValue = emiEle11.getText();
-		System.out.println("emi amount for 10 months tenure is "+ emiValue);
-		Assert.assertEquals(emiValue,"65.33");
-	}
-	@Then("^verify the installment amount of 9 months$")
-	public void verify_the_installment_amount_for_9_month(){
-		WebElement minusEle = driver.findElement(By.xpath("//*[@id=\"SimControl-formSelector\"]/button[1]"));
-		minusEle.click();
-		WebElement emiEle11 = driver.findElement(By.xpath("//*[@id=\"value-quotes\"]"));
-		String emiValue = emiEle11.getText();
-		System.out.println("emi amount for 9 months tenure is "+ emiValue);
-		Assert.assertEquals(emiValue,"71.94");
-	}
-	@Then("^verify the installment amount of 8 months$")
-	public void verify_the_installment_amount_for_8_month(){
-		WebElement minusEle = driver.findElement(By.xpath("//*[@id=\"SimControl-formSelector\"]/button[1]"));
-		minusEle.click();
-		WebElement emiEle11 = driver.findElement(By.xpath("//*[@id=\"value-quotes\"]"));
-		String emiValue = emiEle11.getText();
-		System.out.println("emi amount for 8 months tenure is "+ emiValue);
-		Assert.assertEquals(emiValue,"80.2");
-	}
-	@Then("^verify the installment amount of 7 months$")
-	public void verify_the_installment_amount_for_7_month(){
-		WebElement minusEle = driver.findElement(By.xpath("//*[@id=\"SimControl-formSelector\"]/button[1]"));
-		minusEle.click();
-		WebElement emiEle11 = driver.findElement(By.xpath("//*[@id=\"value-quotes\"]"));
-		String emiValue = emiEle11.getText();
-		System.out.println("emi amount for 7 months tenure is "+ emiValue);
-		Assert.assertEquals(emiValue,"90.82");
-	}
-	@Then("^verify the installment amount of 6 months$")
-	public void verify_the_installment_amount_for_6_month(){
-		WebElement minusEle = driver.findElement(By.xpath("//*[@id=\"SimControl-formSelector\"]/button[1]"));
-		minusEle.click();
-		WebElement emiEle11 = driver.findElement(By.xpath("//*[@id=\"value-quotes\"]"));
-		String emiValue = emiEle11.getText();
-		System.out.println("emi amount for 6 months tenure is "+ emiValue);
-		Assert.assertEquals(emiValue,"105");
-	}
-	@Then("^verify the installment amount of 5 months$")
-	public void verify_the_installment_amount_for_5_month(){
-		WebElement minusEle = driver.findElement(By.xpath("//*[@id=\"SimControl-formSelector\"]/button[1]"));
-		minusEle.click();
-		WebElement emiEle11 = driver.findElement(By.xpath("//*[@id=\"value-quotes\"]"));
-		String emiValue = emiEle11.getText();
-		System.out.println("emi amount for 5 months tenure is "+ emiValue);
-		Assert.assertEquals(emiValue,"124.85");
-	}
-	@Then("^verify the installment amount of 4 months$")
-	public void verify_the_installment_amount_for_4_month(){
-		WebElement minusEle = driver.findElement(By.xpath("//*[@id=\"SimControl-formSelector\"]/button[1]"));
-		minusEle.click();
-		WebElement emiEle11 = driver.findElement(By.xpath("//*[@id=\"value-quotes\"]"));
-		String emiValue = emiEle11.getText();
-		System.out.println("emi amount for 4 months tenure is "+ emiValue);
-		Assert.assertEquals(emiValue,"154.64");
-	}
-	@Then("^verify the installment amount of 3 months$")
-	public void verify_the_installment_amount_for_3_month(){
-		WebElement minusEle = driver.findElement(By.xpath("//*[@id=\"SimControl-formSelector\"]/button[1]"));
-		minusEle.click();
-		WebElement emiEle11 = driver.findElement(By.xpath("//*[@id=\"value-quotes\"]"));
-		String emiValue = emiEle11.getText();
-		System.out.println("emi amount for 3 months tenure is "+ emiValue);
-		Assert.assertEquals(emiValue,"204.21");
-	}
-	@Then("^verify the installment amount of 2 months$")
-	public void verify_the_installment_amount_for_2_month(){
-		WebElement minusEle = driver.findElement(By.xpath("//*[@id=\"SimControl-formSelector\"]/button[1]"));
-		minusEle.click();
-		WebElement emiEle11 = driver.findElement(By.xpath("//*[@id=\"value-quotes\"]"));
-		String emiValue = emiEle11.getText();
-		System.out.println("emi amount for 2 months tenure is "+ emiValue);
-		Assert.assertEquals(emiValue,"303.3");
+	@Then("^verify the header$")
+	public void verify_the_header() {
+		System.out.println("Verify the headers");
+		WebElement menuIcon = driver.findElement(By.xpath("//*[text()=\"Open Menu\"]"));
+		Assert.assertTrue("menu icon is not displayed", menuIcon.isDisplayed());
+		WebElement cartIcon = driver.findElement(By.xpath("//a[@class=\"shopping_cart_link\"]"));
+		Assert.assertTrue("cartIcon is not displayed", cartIcon.isDisplayed());
 	}
 
-	 @Then("^Close the browser$")
-	 public void close_the_browser(){
-		 driver.quit();
-	 }
+	@And("^verify the sort filter$")
+	public void validate_sort_filter(){
+		WebElement sortFilterButton = driver.findElement(By.xpath("//select[@class=\"product_sort_container\"]"));
+		Assert.assertTrue("shortFilterButton is not displayed", sortFilterButton.isDisplayed());
+	}
+
+  @When("^login with valid user$")
+  public void log_in_with_valid_user() {
+    WebElement userName = driver.findElement(By.xpath("//*[@id=\"user-name\"]"));
+    userName.sendKeys("standard_user");
+    WebElement password = driver.findElement(By.xpath("//*[@id=\"password\"]"));
+    password.sendKeys("secret_sauce");
+    WebElement login = driver.findElement(By.xpath("//*[@id=\"login-button\"]"));
+    login.submit();
+    System.out.println("Logged In successfully");
+    WebElement addToCartIcon = driver.findElement(By.xpath("//a[@class='shopping_cart_link']"));
+    WebElement productText = driver.findElement(By.xpath("//*[text()='Products']"));
+    Assert.assertTrue("Add to Cart icon not displayed", addToCartIcon.isDisplayed());
+    Assert.assertTrue("Add to Cart icon not displayed", productText.isDisplayed());
+  }
+
+  @When("^add product in cart$")
+  public void add_product_in_cart() {
+    System.out.println("Adding the one product in Cart");
+    WebElement addTheItemInCartElement = driver.findElement(By.xpath("(//button[@class=\"btn btn_primary btn_small btn_inventory \"])[1]"));
+    addTheItemInCartElement.click();
+  }
+
+  @Then("^validate the cart functionality$")
+  public void validate_the_cart_functionality() {
+    WebElement cartIcon = driver.findElement(By.xpath("//span[@class=\"shopping_cart_badge\"]"));
+    String addedQuantity = cartIcon.getText();
+    System.out.println(String.format("Added quantity= %s", addedQuantity));
+    Assert.assertEquals("quantity did not match", "1", addedQuantity);
+  }
+
+  @When("^remove the product from cart$")
+  public void remove_the_product_from_cart() {
+    System.out.println("Removing the one product in Cart");
+    WebElement removeProductButton = driver.findElement(By.xpath("(//button[@class=\"btn btn_secondary btn_small btn_inventory \"])[1]"));
+    removeProductButton.click();
+  }
+
+  @Then("^validate the cart functionality after removing the product$")
+  public void validate_the_cart_functionality_after_remove() {
+    WebElement cartIcon = driver.findElement(By.xpath("//a[@class=\"shopping_cart_link\"]"));
+    String addedQuantity = cartIcon.getText();
+    System.out.println(String.format("Cart quantity After removing= %s", addedQuantity));
+    Assert.assertTrue("validate empty cart", addedQuantity.isEmpty());
+  }
+
+  @When("^open cart page$")
+  public void open_cart_page() {
+    System.out.println("Click on Cart Icon and open cart page");
+		WebElement cartIcon = driver.findElement(By.xpath("//a[@class=\"shopping_cart_link\"]"));
+		cartIcon.click();
+  }
+
+  @Then("^validate the cart page$")
+  public void validate_the_cart_page() {
+		System.out.println("Validate the Cart Page");
+		System.out.println("Validating the Your Cart text");
+    WebElement yourCartText = driver.findElement(By.xpath("//span[text()=\"Your Cart\"]"));
+    Assert.assertTrue("Your cart test is not displayed", yourCartText.isDisplayed());
+		System.out.println("Validate the quantity text");
+		WebElement quantity = driver.findElement(By.xpath("//*[text()=\"QTY\"]"));
+		Assert.assertTrue("Quantity is not shown", quantity.isDisplayed());
+		System.out.println("Validate the quantity text");
+		WebElement description = driver.findElement(By.xpath("//*[text()=\"Description\"]"));
+		Assert.assertTrue("Description text is not shown", description.isDisplayed());
+		System.out.println("Validate the Continue shopping button");
+		WebElement continueShopping = driver.findElement(By.xpath("//button[@name=\"continue-shopping\"]"));
+		Assert.assertTrue("continueShopping button is not shown", continueShopping.isDisplayed());
+		System.out.println("Validate the checkout button");
+		WebElement checkoutButton = driver.findElement(By.xpath("//button[@name=\"checkout\"]"));
+		Assert.assertTrue("Checkout button is not shown", checkoutButton.isDisplayed());
+
+  }
+
+  @Then("^Close the browser$")
+  public void close_the_browser() {
+    driver.quit();
+  }
 
 }

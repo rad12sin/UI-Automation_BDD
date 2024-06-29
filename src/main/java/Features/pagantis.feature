@@ -2,25 +2,23 @@ Feature: Verify the Pagantis Simulator for calculating Installment amount
 
 Scenario Outline: Test scenario for Pagantis
 
-Given user launched the pagantis
+Given user launched the Swag labs
 Then verify the title of page
-When installment of 12 months verify the installment amount
-Then verify the installment amount of 11 months
-Then verify the installment amount of 10 months
-Then verify the installment amount of 9 months
-Then verify the installment amount of 8 months
-Then verify the installment amount of 7 months
-Then verify the installment amount of 6 months
-Then verify the installment amount of 5 months
-Then verify the installment amount of 4 months
-Then verify the installment amount of 3 months
-Then verify the installment amount of 2 months
-
+When login with valid user
+Then verify the header
+And verify the sort filter
+When add product in cart
+Then validate the cart functionality
+When remove the product from cart
+Then validate the cart functionality after removing the product
+When open cart page
+Then validate the cart page
+Then verify the header
 Then Close the browser
 
 
 Examples:
-	| Emi_installment | Amount |
-	| Verify for various installment  | values |
+	| Sanity| Test Case Count |
+	|  Swag Labs Sanity | 5|
 
 		
