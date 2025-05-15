@@ -1,5 +1,5 @@
 # UI-Automation_BDD
-UI automation for  PAGANTIS QA ASSIGNMENT. Notes to install UI Automation BDD framework. Please follow below steps for running the automation suite.
+UI automation for QA ASSIGNMENT. Notes to install UI Automation BDD framework. Please follow below steps for running the automation suite.
 
 1. Install the maven 3.6.3 and set the path in environment variable.
 2. install java-1.8 and set the path in environment variable.
